@@ -18,10 +18,10 @@ class Login extends React.Component {
     // console.log(value);
     this.setState(() => ({ // estado novo que será renderizado
       [name]: value,
-    }), this.validadeName());
+    }), this.validityName());
   };
 
-  validadeName = () => { // O botão para entrar só deve estar habilitado caso o nome digitado tenha 3 ou mais caracteres.
+  validityName = () => { // O botão para entrar só deve estar habilitado caso o nome digitado tenha 3 ou mais caracteres.
     const { name } = this.state;
     const minimumLength = 2;
     if (name.length >= minimumLength) {
