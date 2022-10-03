@@ -25,7 +25,7 @@ class Header extends React.Component {
     const { name, isLoading } = this.state;
     return (
       <header data-testid="header-component">
-        <h1>Header</h1>
+        <h2>Navegador</h2>
         <div>
           <Link data-testid="link-to-search" to="/search">Buscar</Link>
           <Link data-testid="link-to-favorites" to="/favorites">Meus Favoritos</Link>

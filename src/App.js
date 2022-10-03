@@ -9,16 +9,15 @@ class App extends React.Component {
     };
   }
 
-  // eslint-disable-next-line react/no-unused-class-component-methods
-  handleChange = () => {
-  // as condições de mudança
-  };
+  // handleChange = () => {
+  // // as condições de mudança
+  // };
 
   render() {
     // desestruturar
     return (
       <>
-        <p>TrybeTunes</p>
+        <h1>TrybeTunes</h1>
         <Routes />
       </>
     );
