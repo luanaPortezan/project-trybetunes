@@ -7,7 +7,7 @@ class Profile extends Component {
       <div data-testid="page-profile">
         <Header />
         {' '}
-        Perfil
+        Meu Perfil
       </div>
     );
   }
