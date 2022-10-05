@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import { getUser } from '../services/userAPI';
 import Loading from '../components/Loading';
@@ -13,10 +14,10 @@ class Profile extends Component {
   }
 
   componentDidMount() {
-    this.getInfo();
+    this.getInfoUser();
   }
 
-  getInfo = async () => {
+  getInfoUser = async () => {
     this.setState({ isLoading: true });
     const perfilInfo = await getUser();
     this.setState({ userPerfilInfo: perfilInfo, isLoading: false });
@@ -33,9 +34,11 @@ class Profile extends Component {
         {!isLoading && (
           <div>
             <img data-testid="profile-image" src={ image } alt={ name } />
+            <Link to="/profile/edit"><h5>Editar perfil</h5></Link>
+
             <div>
               <h3>
-                <h4>Usuário</h4>
+                <h4>User Test</h4>
                 {name}
               </h3>
             </div>
