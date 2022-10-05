@@ -125,8 +125,9 @@ class Search extends React.Component {
             Pesquisar
           </button>
         </form>
+
         <div>
-          {isLoading ? <Loading /> : this.mapSearch()}
+          {this.mapSearch()}
         </div>
         <div>
           {!foundArtists && <p>Nenhum álbum foi encontrado</p>}
