@@ -19,15 +19,15 @@ class Favorites extends Component {
 
   getFavorites = async () => {
     this.setState({ isLoading: true });
-    const list = await getFavoriteSongs();
+    const listMusics = await getFavoriteSongs();
     this.setState(() => ({
-      listFavorites: list,
+      listFavorites: listMusics,
     }), () => {
       this.setState({ isLoading: false });
     });
   };
 
-  removeSongList = () => {
+  listRemoveSong = () => {
     // console.log('removeu!!');
     this.getFavorites();
   };
@@ -39,7 +39,7 @@ class Favorites extends Component {
     return (
       <div data-testid="page-favorites">
         <Header />
-        Meus Favoritos
+        Meus Favoritos:
         <div>
           { listFavorites.map((element) => (<MusicCard
             music={ element }
@@ -47,7 +47,7 @@ class Favorites extends Component {
             trackName={ element.trackName }
             previewUrl={ element.previewUrl }
             trackId={ element.trackId }
-            removeSongList={ this.removeSongList }
+            listRemoveSong={ this.listRemoveSong }
           />))}
         </div>
       </div>
