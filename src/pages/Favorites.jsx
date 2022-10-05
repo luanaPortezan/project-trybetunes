@@ -27,7 +27,7 @@ class Favorites extends Component {
     });
   };
 
-  RemoveSong = () => {
+  listRemoveSong = () => {
     // console.log('removeu!!');
     this.getFavorites();
   };
@@ -47,7 +47,7 @@ class Favorites extends Component {
             trackName={ element.trackName }
             previewUrl={ element.previewUrl }
             trackId={ element.trackId }
-            RemoveSong={ this.RemoveSong }
+            listRemoveSong={ this.listRemoveSong }
           />))}
         </div>
       </div>

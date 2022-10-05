@@ -39,13 +39,11 @@ class Album extends React.Component {
     this.setState({ isLoading: false, musicsAlbum });
   };
 
-  listRemoveSong = () => {
-  };
-
   render() {
     const { album, isLoading, musicsAlbum } = this.state;
     if (isLoading) return <Loading />;
     const { collectionName, artistName, artworkUrl100 } = album[0];
+
     return (
       <div data-testid="page-album">
         <Header />
@@ -71,7 +69,7 @@ class Album extends React.Component {
             trackName={ music.trackName }
             previewUrl={ music.previewUrl }
             trackId={ music.trackId }
-            listRemoveSong={ this.listRemoveSong }
+
           />
         ))}
       </div>
