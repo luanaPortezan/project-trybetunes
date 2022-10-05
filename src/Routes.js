@@ -13,7 +13,7 @@ class Routes extends Component {
     return (
       <Switch>
         <Route exact path="/" component={ Login } />
-        <Route path="/Search" component={ Search } />
+        <Route path="/search" component={ Search } />
         <Route path="/album/:id" component={ Album } />
         <Route path="/favorites" component={ Favorites } />
         <Route exact path="/profile" component={ Profile } />
