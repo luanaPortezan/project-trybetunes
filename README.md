@@ -23,22 +23,22 @@ To install and run the project locally, follow these steps:
 
 1. Clone the repository using
 
-```javascript
-git@github.com:gabrielMatosBoubee/frontend-trybetunes.git
+```bash
+git clone https://github.com/luanaPortezan/project-trybetunes.git
 ```
 2. Enter the project folder using
 
-```javascript
-cd frontend-trybetunes
+```bash
+cd project-trybetunes
 ```
 3. Install dependencies using
 
-```javascript
+```bash
 npm install
 ```
 4. Start the server using
 
-```javascript
+```bash
 npm start
 ```
 5. Access the application in the browser at `http://localhost:3000`
