@@ -1,4 +1,4 @@
-# project-trybetunes
+# TrybeTunes Project
 
 Welcome to the TrybeTunes Project repository! TrybeTunes is a project developed during the Trybe course to practice the concepts of React and Redux. The goal is to create a music streaming interface that allows the user to search for artists and albums, add songs to their favorite playlist and listen to snippets of songs available on the iTunes API.
 
