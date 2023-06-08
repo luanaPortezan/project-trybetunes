@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { getUser } from '../services/userAPI';
 import Loading from './Loading';
+import { getUser } from '../services/userAPI';
 
 class Header extends React.Component {
   constructor() {
